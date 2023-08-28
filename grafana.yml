@@ -1,0 +1,6 @@
+apiVersion: opcito.org/v1 
+kind: Grafana 
+metadata: 
+  name: grafana-testing 
+spec: 
+  nodeport: 30087

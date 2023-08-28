@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+name: grafana-operator
+spec:
+selector:
+matchLabels:
+app: grafana-operator
+template:
+metadata:
+labels:
+app: grafana-operator
+spec:
+serviceAccountName: grafana-operator
+containers:
+- image: sanket07/operator-grafana
+name: grafana-operator
+EOF
